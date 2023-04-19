@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-lg-12 mt-5">
+      <h1 class="display-5 fw-bold mt-5">
+        Clientes da Raposo 66
+      </h1>
+      <p class="mt-5" style="font-size: 25px">
+        Inovação, facilidade de uso, melhores resultados - eles são apenas alguns dos motivos pelos quais as organizações de todos os setores e de todos os tamanhos confiam na Raposo 66 para ajudá-los a obter sucesso. Ouça nossos clientes aprenderem o que faz da Raposo 66 a escolha certa para eles, e por que somos o parceiro certo para sua empresa.
+      </p>
+    </div>
+    <div class="col-12 mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-4 p-5" *ngFor="let img of imageObject">
+          <img [src]="img.thumbImage" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

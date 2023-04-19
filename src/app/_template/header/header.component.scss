@@ -1,0 +1,50 @@
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      color: rgba(255,255,255,.6);
+      font-size: 20px;
+
+      &.active {
+        color: rgba(255,255,255,1);
+      }
+
+      &:hover {
+        color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
+
+.fluid {
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  transition: linear 0.2s;
+}
+
+.fluid-bg {
+  background: black;
+}
+
+
+.redes-sociais {
+  fa-icon {
+    color: white;
+
+    &:hover {
+      color: #F48120;
+    }
+  }
+}
+
+.hover-green-wpp {
+  a, fa-icon {
+    transition: linear .2s;
+  }
+
+  &:hover {
+    a, fa-icon {
+      color: #44c554 !important;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.bg-clients {
+  background-image: url('/assets/aerial-view-of-a-business-team.jpg');
+  background-color: black;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg-clients {
+    background-size: cover !important;
+  }
+}

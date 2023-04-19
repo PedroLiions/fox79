@@ -1,0 +1,29 @@
+<section class="min-vh-100 d-flex align-items-center bg-clients">
+  <div class="container">
+    <div>
+      <h1 class="text-base-group-title">
+        <span class="display-3">NOSSOS</span><br>
+        <span class="display-2">CLIENTES</span>
+      </h1>
+    </div>
+    <div class="mt-4">
+      <section class="splide" *ngIf="imageObject">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" *ngFor="let img of imageObject">
+              <picture>
+                <img class="img-fluid" style="max-width: 300px; height: auto" [src]="img.image" alt="">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="mt-4">
+      <a [routerLink]="'/clientes'"
+         class="btn btn-lg btn-secondary">
+        VER TODOS OS CLIENTES
+      </a>
+    </div>
+  </div>
+</section>

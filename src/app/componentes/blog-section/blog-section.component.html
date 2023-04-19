@@ -1,0 +1,31 @@
+<section class="min-vh-100 py-5 py-lg-5 d-flex align-items-center bg-secondary text-dark bg-blog">
+  <div class="container">
+    <div>
+      <h1 class="text-base-group-title">
+        <span class="display-4 ">ÚLTIMAS</span><br>
+        <span class="display-2 ">DO BLOG</span>
+      </h1>
+    </div>
+    <div>
+      <div class="row mt-4">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0" *ngFor="let post of posts">
+          <div class="bg-white rounded text-black p-5 h-100 ">
+            <div>
+              <img [src]="getThumbURL(post)" alt="" class="img-fluid">
+            </div>
+            <h2>
+              {{ post.title.rendered }}
+            </h2>
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <a href="" class="btn btn-lg btn-primary" routerLink="/blog">
+            ver todas as novidades
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

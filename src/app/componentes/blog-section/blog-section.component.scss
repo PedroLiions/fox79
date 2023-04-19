@@ -1,0 +1,17 @@
+.wp-block-image {
+  width: 100% !important;
+  height: auto !important;
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.bg-blog {
+  background-image: url("../../../assets/bg-aleatorio2.webp");
+  background-color: black;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

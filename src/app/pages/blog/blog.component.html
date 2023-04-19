@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-12 col-lg-12 mb-4 mb-lg-2" *ngFor="let post of posts">
+    <div class="rounded py-5 h-100">
+      <h2 class="display-5 text-uppercase">
+        {{ post.title.rendered }}
+      </h2>
+
+      <div [innerHTML]="post.content.rendered" class="overflow-hidden"></div>
+    </div>
+
+    <hr>
+
+  </div>
+</div>

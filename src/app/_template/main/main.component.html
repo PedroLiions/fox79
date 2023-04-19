@@ -1,0 +1,19 @@
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<app-footer></app-footer>
+<ngx-ui-loader
+  [fgsTemplate]="foregroundSpinner"
+  [bgsTemplate]="backgroundSpinner"
+></ngx-ui-loader>
+
+<ng-template #foregroundSpinner>
+  <!-- Your awesome foreground spinner defined here -->
+</ng-template>
+
+<ng-template #backgroundSpinner>
+  <!-- Your awesome background spinner defined here -->
+</ng-template>

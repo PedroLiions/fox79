@@ -1,0 +1,148 @@
+<div class="bg-home">
+  <div class="container-children container d-flex flow-column align-items-center">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-12 col-lg-6">
+        <div class="">
+          <h1 class="text-base-group-title">
+            <span class="display-3">{{ heroTitle }}</span> <br>
+            <span class="display-2">{{heroSubTitle}}</span>
+          </h1>
+          <p class="mt-5 mt-lg-3 text-base-banner">
+            {{ heroText }}
+          </p>
+        </div>
+      </div>
+      <div class="col-5 d-none d-lg-flex" style="position: absolute; right: 105px; bottom: 0;"><img
+        src="/assets/hero-1.png" alt="" style="max-width: 600px;"></div>
+    </div>
+  </div>
+
+  <section
+    class="bg-secondary bg-secondary-nossas-solucoes min-vh-100 d-flex align-items-center py-5 py-lg-0 text-black">
+    <div class="container py-5 pt-lg-0">
+      <h1 class="text-base-group-title">
+        <span class="display-3">NOSSAS</span> <br>
+        <span class="display-2">SOLUÇÕES</span>
+      </h1>
+      <h1 class="display-4 fw-bolder my-5 my-lg-0 mb-lg-5">
+      </h1>
+
+      <div class="row">
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <h2 class="text-uppercase fw-bold">Apoio ao Trânsito</h2>
+          <p class="fw-bold">
+            Planejar e executar as operações viárias necessárias à realização de obras que causem
+            interferência em vias públicas. Implementar os desvios necessários à sua execução, administrando
+            os conflitos existentes entre veículos e pedestres.</p>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0 ">
+          <h2 class="text-uppercase fw-bold">Des. de Projetos</h2>
+          <p class="fw-bold">Cada projeto exige de nossa empresa persistência e criatividade. Através de nossa equipe
+            técnica, estamos preparados para estudar as mais diversas situações, buscando soluções que atendam todas as
+            normas exigidas, e garantam a satisfação de nossos clientes , bem como a melhor relação custo/beneficio.</p>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <h2 class="text-uppercase fw-bold">Execução de Projetos</h2>
+          <p class="fw-bold">Os nossos projetos ou os de terceiros, serão executados atendendo todas as Normas Técnicas
+            em vigor e aplicáveis a cada um em particular.
+            Responsável ainda por toda parte documental junto aos Orgãos Públicos. Segurança do Trabalho e Meio
+            Ambiente. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-2 min-vh-100 d-flex align-items-center py-5 py-lg-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h1 class="display-4 fw-bolder mb-5 text-base-group-title">
+            <span [innerHTML]="quemSomosTitle"></span>
+          </h1>
+          <p>
+            {{ quemSomosTexto }}
+          </p>
+          <div>
+            <a class="btn btn-lg btn-secondary" routerLink="/quem-somos">
+              SAIBA MAIS
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/nTNaUHLakdo"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-blog-section></app-blog-section>
+
+  <app-clientes></app-clientes>
+
+  <section class="py-5 position-relative py-lg-0 d-flex align-items-center bg-secondary text-dark bg-trabalhe-conosco">
+    <div class="container py-5 mt-5">
+      <div class="row py-5">
+        <div class="col-12">
+          <h1 class="text-base-group-title">
+            <span class="display-3">TRABALHE</span><br>
+            <span class="display-2">CONOSCO</span>
+          </h1>
+        </div>
+
+        <div class="col-12 ">
+          <div class="row">
+            <div class="col-12 col-lg-7 fw-bold">
+              <p>
+                Preecha os campos abaixo, que entraremos em contato com você.
+              </p>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label for="name"
+                           class="form-label"
+                           [(ngModel)]="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="José">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label for="mail" class="form-label">Assunto</label>
+                    <input type="email"
+                           [(ngModel)]="subject"
+                           class="form-control"
+                           id="mail"
+                           placeholder="Assunto">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="msg" class="form-label">Mensagem</label>
+                <textarea [(ngModel)]="message" class="form-control" name="" id="msg" rows="3"></textarea>
+              </div>
+              <div class="col-12 mt-3">
+                <button (click)="openMailClient()" class="btn btn-primary">
+                  ENVIAR
+                </button>
+              </div>
+            </div>
+
+            <div class="col-5 d-none d-lg-flex" style="position: absolute; right: 0; bottom:  0;">
+              <img src="/assets/foto emy site - png.png" alt="" style="max-width: 600px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wpp-cta">
+    <a href="https://wa.me/5511976216666" target="_blank">
+      <img src="/assets/images/wpp-cta.png" alt="Chamar no WhatsApp" title="Chamar no WhatsApp">
+    </a>
+  </div>
+</div>

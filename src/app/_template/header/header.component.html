@@ -1,0 +1,141 @@
+<div class="position-fixed fluid px-0 pt-0" #header style="z-index: 1100">
+  <div class="bg-dark d-none d-lg-block">
+
+    <div class="container py-3 d-flex flex-row justify-content-between">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+
+        <div class="text-muted d-flex flex-row align-items-center">
+          <fa-icon [icon]="faLocationPin"></fa-icon>
+          <span class="ms-2">R. Hugo Carotini, 401 - sala 6 - Instituto de Previdência, São Paulo - SP, 05532-020</span>
+        </div>
+
+        <div class="ms-3 text-muted">
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span class="ms-2">Seg a sex, horário comercial | Operação 24/7</span>
+        </div>
+
+        <div class="d-flex justify-content-end mw-100">
+          <div class="ms-3 text-white redes-sociais">
+            <a href="https://instagram.com/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faInstagram"></fa-icon>
+            </a>
+
+            <a href="https://instagram.com/fox79eventos_" class="me-2" target="_blank">
+              <fa-icon [icon]="faFacebook"></fa-icon>
+            </a>
+
+            <!-- <a href="https://www.youtube.com/channel/UCJCEz4CB8aoqEcEERrzgNuQ/featured" class="me-2" target="_blank">
+              <fa-icon [icon]="faYoutube"></fa-icon>
+            </a> -->
+
+            <!-- <a href="https://www.linkedin.com/company/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+
+            <a href="https://twitter.com/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faTwitter"></fa-icon>
+            </a>
+
+            <a href="https://br.pinterest.com/raposo66sp/" class="me-2" target="_blank">
+              <fa-icon [icon]="faPinterest"></fa-icon>
+            </a> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+<nav class="navbar navbar-expand-lg container-fluid m-auto">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" routerLink="/home" >
+      <img src="/assets/raposo66-logotipo.png"  style="max-width: 112px" alt="">
+    </a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-header"
+            aria-controls="nav-header">
+      <fa-icon class="text-white" [icon]="faBars"></fa-icon>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-header" #navCollapse>
+      <a class="navbar-brand d-none d-lg-block" routerLink="/home">
+        <div>
+          <img src="/assets/raposo66-logotipo.png"
+               class="animated"
+               style="max-width: 152px" alt=""
+               (mouseenter)="callAnimation($event.target)"  (mouseleave)="animationLeave($event.target)">
+        </div>
+      </a>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">
+            home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/quem-somos" routerLinkActive="active">
+            quem somos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/clientes" routerLinkActive="active">
+            clientes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active">
+            blog
+          </a>
+        </li>
+        <div class="d-flex justify-content-end mw-100 d-lg-none">
+          <div class="ms-3 text-white redes-sociais">
+            <a href="https://www.instagram.com/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faInstagram"></fa-icon>
+            </a>
+
+            <a href="https://www.facebook.com/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faFacebook"></fa-icon>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCq7-TMqY9cuptHqxPzShbQw" class="me-2" target="_blank">
+              <fa-icon [icon]="faYoutube"></fa-icon>
+            </a>
+
+            <a href="https://www.linkedin.com/company/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+
+            <a href="https://twitter.com/raposo66" class="me-2" target="_blank">
+              <fa-icon [icon]="faTwitter"></fa-icon>
+            </a>
+
+            <a href="https://br.pinterest.com/raposo66sp/" class="me-2" target="_blank">
+              <fa-icon [icon]="faPinterest"></fa-icon>
+            </a>
+          </div>
+        </div>
+      </ul>
+      <div class="d-none d-lg-flex text-end">
+        <div class="h4">
+<!--          <div>-->
+<!--            <fa-icon class="me-2 text-muted" [icon]="faPhoneAlt"></fa-icon>-->
+<!--            <a class="text-white text-decoration-none text-muted" href="tel:551140032045">4003 2045</a>-->
+<!--          </div>-->
+          <div class="text-muted hover-green-wpp">
+            <fa-icon class="me-2 text-muted" [icon]="faWhatsapp"></fa-icon>
+            <a class="text-white text-decoration-none text-muted" href="https://wa.me/5511992342020" target="_blank">11 99234-2020</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</nav>
+<!--  <div class="text-center">-->
+<!--    <h5>-->
+<!--      <i>NOSSO TRABALHO SEGUE UM PADRÃO RÍGIDO DE NORMAS E TÉCNICAS PADRONIZADAS PELA CET.</i>-->
+<!--    </h5>-->
+<!--  </div>-->
+</div>
