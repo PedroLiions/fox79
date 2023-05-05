@@ -60,7 +60,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     ReactiveFormsModule,
     RouterModule,
     NgxUiLoaderModule.forRoot({
-      pbColor: "#F48120",
+      pbColor: "#58bb00",
       bgsSize: 40,
       logoUrl: '/assets/logo-load.png',
       logoSize: 180,

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://blog.fox79.com'
+  api: 'https://blog.fox79.com'
 };
 
 /*
