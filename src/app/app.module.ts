@@ -34,7 +34,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   fgsType: SPINNER.chasingDots, // foreground spinner type
   pbDirection: PB_DIRECTION.leftToRight, // progress bar direction
   pbThickness: 5, // progress bar thickness,
-  logoUrl: '/assets/raposo66-logotipo.png'
+  logoUrl: '/assets/images/fox-79-logo.png'
 };
 @NgModule({
   declarations: [
@@ -62,8 +62,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     NgxUiLoaderModule.forRoot({
       pbColor: "#58bb00",
       bgsSize: 40,
-      logoUrl: '/assets/logo-load.png',
-      logoSize: 180,
+      logoUrl: '/assets/images/fox-79-logo.png',
+      logoSize: 190,
       overlayColor: 'black'
     }),
     NgxUiLoaderHttpModule.forRoot({
