@@ -57,3 +57,15 @@
     background-size: cover !important;
   }
 }
+
+.persona-home {
+  position: absolute; 
+  right: 105px; 
+  bottom: 0;
+  img {
+    max-width: 500px;
+    @media screen and (max-width: 992px) {
+      max-width: 530px;
+    }
+  }
+}

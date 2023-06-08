@@ -4,6 +4,10 @@
       color: rgba(255,255,255,.6);
       font-size: 20px;
 
+      @media screen and (max-width: 1200px) {
+        font-size: 16px;
+      }
+
       &.active {
         color: rgba(255,255,255,1);
       }
@@ -13,6 +17,10 @@
       }
     }
   }
+}
+
+.header {
+  font-size: 13px !important;
 }
 
 .fluid {

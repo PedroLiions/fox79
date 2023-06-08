@@ -22,18 +22,18 @@ $body-bg: #0a0400;
 
 
 body {
-  background-image: url("assets/foto site (3).png");
-  background-position: center 102px;
-  background-size: 100%;
+  background-image: url("assets/bg-hero-mobile.png");
+  background-position: center top;
+  background-size: 100% 100vh;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   body {
     background-image: url("assets/bg-hero2.webp");
     background-color: black;
     background-position: center top;
-    background-size: 100%;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
   }
 }
@@ -42,6 +42,9 @@ body {
 
 .text-base-banner {
   font-size: 22px;
+  @media screen and (max-width: 1300px) {
+    font-size: 18px;
+  }
   font-weight: 400;
 }
 
@@ -53,9 +56,16 @@ body {
   }
   span:nth-of-type(1) {
     line-height: 0;
+    
+    @media screen and (max-width: 1300px) {
+      font-size: 3rem;
+    }
   }
   span:nth-of-type(2) {
     line-height: 51px;
+    @media screen and (max-width: 1300px) {
+      font-size: 3.5rem;
+    }
   }
 }
 @media screen and (max-width: 800px) {
