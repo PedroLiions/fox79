@@ -54,9 +54,13 @@ export class ClientesComponent implements OnInit {
         right: 10
       },
       breakpoints: {
-        1024: {
+        1023: {
           perPage: 1,
         },
+        1280: {
+          perPage: 2,
+        }
+        
       }
     } ).mount();
   }
