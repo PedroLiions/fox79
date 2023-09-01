@@ -26,7 +26,7 @@ export class BlogSectionComponent implements OnInit {
 
   getThumbURL(post: any) {
     if (post['_embedded']['wp:featuredmedia']) {
-      return 'https://blog.raposo66.com/wp-content/uploads/' + post['_embedded']['wp:featuredmedia'][0]['media_details']['file']
+      return 'https://blog.fox79.com/wp-content/uploads/' + post['_embedded']['wp:featuredmedia'][0]['media_details']['file']
     }
     return '';
   }
